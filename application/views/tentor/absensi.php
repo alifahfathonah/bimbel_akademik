@@ -16,8 +16,14 @@
                     $hari_ini = 'Selasa';
                 } else if ($hari == 'Wednesday') {
                     $hari_ini = 'Rabu';
+                } else if ($hari == 'Thursday') {
+                    $hari_ini = 'Kamis';
+                } else if ($hari == 'Friday') {
+                    $hari_ini = 'Jumat';
                 } else if ($hari == 'Saturday') {
                     $hari_ini = 'Sabtu';
+                } else if ($hari == 'Sunday') {
+                    $hari_ini = 'Minggu';
                 }
                 ?>
                 Absen Hari<b> <?= $hari ?></b>
