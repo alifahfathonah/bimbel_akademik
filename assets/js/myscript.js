@@ -3,8 +3,8 @@ $('#pilih_mapel').hide();
 $('#viewNilai').hide();
 // $('#view').hide();
 
-var baseUrl = 'http://localhost/akademik/admin/';
-var baseUrlTentor = 'http://localhost/akademik/tentor/';
+var baseUrl = 'http://localhost/bimbel_akademik/admin/';
+var baseUrlTentor = 'http://localhost/bimbel_akademik/tentor/';
 
 // $('#load_mapel').click(function () {
 //     var data = $('.form_jadwal').serialize();

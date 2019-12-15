@@ -38,7 +38,7 @@
 </div>
 
 <script>
-    var baseUrlTentor = 'http://localhost/akademik/tentor/';
+    var baseUrlTentor = 'http://localhost/bimbel_akademik/tentor/';
     $('#viewSiswa').hide();
     $('#rombelCN').change(function() {
         $.ajax({

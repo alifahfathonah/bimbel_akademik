@@ -61,7 +61,7 @@ class Nilai_model extends CI_Model
 
     public function get($id)
     {
-        $query = "SELECT a.id_rombel, b.nama_rombel FROM tb_jadwal a INNER JOIN tb_rombel b ON a.id_rombel=b.id WHERE id_user=$id";
+        $query = "SELECT a.id_rombel, b.nama_rombel FROM tb_jadwal a INNER JOIN tb_rombel b ON a.id_rombel=b.id WHERE id_user=$id GROUP BY a.id_rombel";
         return $this->db->query($query);
     }
 
