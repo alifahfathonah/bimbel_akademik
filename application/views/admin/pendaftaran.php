@@ -88,6 +88,21 @@
                             <label for="">Tanggal Lahir</label>
                             <input type="date" name="tgl_lahir" required class="form-control">
                         </div>
+                        <div class="form-check col">
+                            <label class="form-check-label">Is Active?</label><br>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" checked value="yes" id="raktif" name="active" value="AKTIF">
+                                    <i class="fas fa-circle text-success"></i> AKTIF
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="no" id="rtaktif" name="active" value="NONAKTIF">
+                                    <i class="fas fa-circle text-danger"></i> NON AKTIF
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group row">
                         <div class="col">

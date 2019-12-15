@@ -34,7 +34,7 @@ class Pendaftaran_model extends CI_Model
             'username' => $username[0],
             'password' => md5($password[0] . $password[1] . $password[2]),
             'level' => 'siswa',
-            'active' => 'yes',
+            'active' => $post['active'],
         ];
 
         $this->db->insert('tb_users', $data);
@@ -46,18 +46,18 @@ class Pendaftaran_model extends CI_Model
             'tgl_daftar' => date('Y-m-d')
         ];
         $this->db->insert('tb_pendaftaran', $data2);
-        $id_daftar = $this->db->insert_id();
+        // $id_daftar = $this->db->insert_id();
 
-        $bulan_array = ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        // $bulan_array = ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
-        for ($x = 0; $x < 12; $x++) {
-            $bulan = $bulan_array[$x] . " " . date('Y');
-            $this->db->insert('tb_pembayaran', [
-                'id_daftar' => $id_daftar,
-                'bulan' => $bulan,
-                'jumlah' => $post['jumlah']
-            ]);
-        }
+        // for ($x = 0; $x < 12; $x++) {
+        //     $bulan = $bulan_array[$x] . " " . date('Y');
+        //     $this->db->insert('tb_pembayaran', [
+        //         'id_daftar' => $id_daftar,
+        //         'bulan' => $bulan,
+        //         'jumlah' => $post['jumlah']
+        //     ]);
+        // }
     }
 
     public function edit($post)
