@@ -176,8 +176,6 @@
                                 <label for="">Tanggal Lahir</label>
                                 <input type="date" value="<?= $key['tgl_lahir'] ?>" name="tgl_lahir" required class="form-control">
                             </div>
-                        </div>
-                        <div class="form-group row">
                             <div class="col">
                                 <label for="">Rombongan Belajar</label>
                                 <select name="rombel" class="form-control">
@@ -187,6 +185,28 @@
                                     <?php endforeach; ?>
                                 </select>
                                 <p id="ketkuota" class="text-danger" style="font-style: italic; font-size: 10px"></p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>Is Active?</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="yes" id="raktif" <?php if ($key['active'] == 'yes') {
+                                                                                        echo 'checked';
+                                                                                    } ?> name="active" value="AKTIF">
+                                        <i class="fas fa-circle text-success"></i> AKTIF
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="no" id="rtaktif" <?php if ($key['active'] == 'no') {
+                                                                                        echo 'checked';
+                                                                                    } ?> name="active" value="NONAKTIF">
+                                        <i class="fas fa-circle text-danger"></i> NON AKTIF
+                                    </label>
+                                </div>
+                                <p>
                             </div>
                         </div>
                         <div style="float: right">

@@ -188,7 +188,7 @@
                             </div>
                             <div class="col">
                                 <label for="">Foto</label><br>
-                                <img class='mb-2' src="<?= base_url('assets/img/foto/' . $key['foto']) ?>" width="50px" >
+                                <img class='mb-2' src="<?= base_url('assets/img/foto/' . $key['foto']) ?>" width="50px">
                                 <input type="hidden" name="old_image" value="<?= $key['foto'] ?>">
                                 <input type="file" name="foto" class="form-control-file">
                                 <p class="text-danger" style="font-style: italic; font-size: 10px">*) kosongi jika tidak ingin diganti</p>
@@ -200,9 +200,9 @@
                                 <input type="text" value="<?= $key['username'] ?>" name="username" required class="form-control">
                             </div>
                             <!-- <div class="col">
-                                <label for="">Password</label>
-                                <input type="password" value="<?= $key['password'] ?>" name="password" required class="form-control">
-                                </div> -->
+                                    <label for="">Password</label>
+                                    <input type="password" value="<?= $key['password'] ?>" name="password" required class="form-control">
+                                    </div> -->
                         </div>
                         <div class="form-group row">
                             <div class="col">
@@ -227,7 +227,7 @@
                                         <input type="radio" value="yes" id="raktif" <?php if ($key['active'] == 'yes') {
                                                                                         echo 'checked';
                                                                                     } ?> name="active" value="AKTIF">
-                                        <i class="fas fa-circle text-success"></i>AKTIF
+                                        <i class="fas fa-circle text-success"></i> AKTIF
                                     </label>
                                 </div>
                                 <div class="radio">
